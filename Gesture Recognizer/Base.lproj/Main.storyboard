@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gesture_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUT-pt-wQ9">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F5O-hI-gzL" appends="YES" id="YjV-XS-iIu"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="kUT-pt-wQ9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E9h-4a-FuR"/>
+                            <constraint firstItem="kUT-pt-wQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WE2-mR-H3S"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="z3K-9h-2gH" appends="YES" id="JQt-T5-mYs"/>
+                            <outletCollection property="gestureRecognizers" destination="kRG-xo-az6" appends="YES" id="nSq-hu-AAj"/>
+                            <outletCollection property="gestureRecognizers" destination="F5O-hI-gzL" appends="YES" id="JOl-rP-ve7"/>
+                            <outletCollection property="gestureRecognizers" destination="PoU-xi-sc0" appends="YES" id="kcZ-6O-BXI"/>
+                            <outletCollection property="gestureRecognizers" destination="95v-Bz-XY2" appends="YES" id="d9D-YQ-Qsz"/>
+                            <outletCollection property="gestureRecognizers" destination="g40-41-d0e" appends="YES" id="tGp-dV-mE6"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="kUT-pt-wQ9" id="i9B-iJ-NFg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="kRG-xo-az6">
+                    <connections>
+                        <action selector="swipeDetected:" destination="BYZ-38-t0r" id="zQc-is-By1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="z3K-9h-2gH"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="3" id="F5O-hI-gzL">
+                    <connections>
+                        <action selector="longPressDetected:" destination="BYZ-38-t0r" id="g0s-4k-5Wr"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="PoU-xi-sc0">
+                    <connections>
+                        <action selector="tapDetected:" destination="BYZ-38-t0r" id="kd2-hS-mSt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="95v-Bz-XY2">
+                    <connections>
+                        <action selector="pinchDetected:" destination="BYZ-38-t0r" id="4y7-3s-EeR"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="g40-41-d0e">
+                    <connections>
+                        <action selector="rotationDetected:" destination="BYZ-38-t0r" id="52Y-Pv-cHc"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
