@@ -44,7 +44,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func swipeDetected(_ sender: UISwipeGestureRecognizer) {
-        statusLabel.text = "Right swipe"
+        statusLabel.text = ("Swipe")
+    
         print("Swipe")
     }
     

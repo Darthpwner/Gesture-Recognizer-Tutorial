@@ -15,7 +15,6 @@
 		6B5E0CCA1EB6FD7400766163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5E0CC81EB6FD7400766163 /* LaunchScreen.storyboard */; };
 		6B5E0CD51EB6FD7500766163 /* Gesture_RecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E0CD41EB6FD7500766163 /* Gesture_RecognizerTests.swift */; };
 		6B5E0CE01EB6FD7500766163 /* Gesture_RecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E0CDF1EB6FD7500766163 /* Gesture_RecognizerUITests.swift */; };
-		6B9D96BF1EBA878000F89F8B /* SlidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D96BE1EBA878000F89F8B /* SlidesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		6B5E0CDB1EB6FD7500766163 /* Gesture RecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gesture RecognizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5E0CDF1EB6FD7500766163 /* Gesture_RecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture_RecognizerUITests.swift; sourceTree = "<group>"; };
 		6B5E0CE11EB6FD7500766163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B9D96BE1EBA878000F89F8B /* SlidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlidesViewController.swift; path = ../SlidesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +101,6 @@
 			children = (
 				6B5E0CBC1EB6FD7400766163 /* AppDelegate.swift */,
 				6B5E0CBE1EB6FD7400766163 /* ViewController.swift */,
-				6B9D96BE1EBA878000F89F8B /* SlidesViewController.swift */,
 				6B5E0CC01EB6FD7400766163 /* Main.storyboard */,
 				6B5E0CC61EB6FD7400766163 /* Assets.xcassets */,
 				6B5E0CC81EB6FD7400766163 /* LaunchScreen.storyboard */,
@@ -268,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B9D96BF1EBA878000F89F8B /* SlidesViewController.swift in Sources */,
 				6B5E0CC51EB6FD7400766163 /* Gesture_Recognizer.xcdatamodeld in Sources */,
 				6B5E0CBF1EB6FD7400766163 /* ViewController.swift in Sources */,
 				6B5E0CBD1EB6FD7400766163 /* AppDelegate.swift in Sources */,
